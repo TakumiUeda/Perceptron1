@@ -1,5 +1,4 @@
-# Perceptron1
-ReadME 
+# Perceptron1 
 Author Takumi Ueda
 
 # 教科書について  
