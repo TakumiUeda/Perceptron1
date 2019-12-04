@@ -1,7 +1,11 @@
-#教科書について
+# Perceptron1
+ReadME 
+Author Takumi Ueda
+
+# 教科書について  
 ゼロから作るDeep Learningという本を買いました。このページはその内容をMATLAB（~~Pycharm開くのがだるかった~~）で実装したまとめです。
 
-#論理演算って何
+# 論理演算って何  
 論理演算は１や０といくつかの計算規則で定義される演算です。コンピュータなどに使われています。
 今回扱う基本演算はAND、OR、NAND、EX-ORの４つです。まずはこの4つを詳しくみていきます。
 
@@ -74,7 +78,7 @@ $$\overline{A \cdot B}= \overline{A} + \overline{B}$$
 $$X=\overline{A \cdot B} \cdot (A+B)=\overline{A} \cdot B+A \cdot \overline{B}$$
 を確かめられます。
 
-#パーセプトロン
+# パーセプトロン
 ## ANDの実装
 次の式で実装します。
 
@@ -116,7 +120,7 @@ tmp(tmp<=0)=0;
 tmp(tmp>0)=1
 ```
 
-##NANDとORの実装
+## NANDとORの実装
 重みとバイアスをいじくって実装します。
 
 ```
@@ -147,7 +151,7 @@ tmp(tmp<=0)=0;
 tmp(tmp>0)=1
 ```
 
-##EX-ORの実装
+## EX-ORの実装
 EX-ORは直線で分離できません。（曲線ならできます）そのため、パーセプトロンを一つ使う方法ではEX-ORを実現できません。
 そこで先ほど変形した式を使います
 $$X=\overline{A \cdot B} \cdot (A+B)$$
@@ -180,12 +184,12 @@ tmp(tmp<=theta)=0;
 tmp(tmp>theta)=1
 ```
 
-##まとめ
+## まとめ
 論理演算の例で単層パーセプトロンを扱いましたが、はじめのAND以外は全て同じプログラムで重みとバイアスが異なるのみでした。（EX-ORは例外）
 学習とは重みやバイアスを適切な値に設定することを指します。
 またANDなどのパーセプトロンを一つ使う方法を単層パーセプトロン、EX-ORのように複数個使う方法を他そうパーセプトロンと言います。
 
-#ソース全体
+# ソース全体
 ```
 % 単純パーセプトロンを使って
 % 論理演算のAND、OR、NAND、EX-ORを実装してみた 
@@ -267,11 +271,11 @@ tmp(tmp<=theta)=0;
 tmp(tmp>theta)=1
 ```
 
-#github
+# github
 https://github.com/rein-chihaya/Perceptron1
 
-#License
+# License  
 MIT
 
-#参考文献
+# 参考文献
 斎藤康毅.ゼロから作るDeep Learning: Pythonで学ぶディープラーニングの理論と実装.オライリー・ジャパン，2016
